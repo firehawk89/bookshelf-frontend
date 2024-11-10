@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["perfectionist"],
+  "rules": {
+    "perfectionist/sort-imports": "error"
+  },
+  "settings": { "perfectionist": { "type": "natural" } }
 }
