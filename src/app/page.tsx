@@ -3,10 +3,14 @@ import { Button } from "@nextui-org/react"
 export default function Home() {
   return (
     <main>
-      <p>
-        Get started by editing <code>src/app/page.tsx</code>.
+      <h1 className="font-title text-3xl">I am a Header</h1>
+      <p className="font-text text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+        perspiciatis atque minima facilis officiis, odio at dolorum, ea est
+        quisquam facere accusamus voluptatum quos, beatae fugiat temporibus
+        laborum sunt quis.
       </p>
-      <Button>Click me</Button>
+      <Button className="uppercase">Click me</Button>
     </main>
   )
 }

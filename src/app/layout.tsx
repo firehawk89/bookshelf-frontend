@@ -4,6 +4,7 @@ import "./globals.css"
 
 import { ReactNode } from "react"
 
+import { libre_baskerville, nunito_sans } from "./fonts"
 import Providers from "./providers"
 
 export const metadata: Metadata = {
@@ -18,8 +19,11 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body>
+    <html
+      lang="en"
+      className={`${nunito_sans.variable} ${libre_baskerville.variable}`}
+    >
+      <body className="font-text">
         <Providers>{children}</Providers>
       </body>
     </html>
