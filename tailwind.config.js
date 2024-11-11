@@ -7,7 +7,12 @@ module.exports = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        title: ["var(--font-libre)"],
+        text: ["var(--font-nunito)"],
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
